@@ -18,6 +18,7 @@
       display: flex;
       border: 1px solid blue;
       flex-direction: column;
+      justify-content: flex-start;
     }
 
 
@@ -26,8 +27,9 @@
       padding-right: 1%;
 
       @media @mobile {
-        width: 100%;
+        width: 90%;
         padding: 0;
+        margin: 0 auto;
       }
 
        
@@ -39,6 +41,9 @@
      
       @media @mobile {
         width: 100%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
       }
 
       img {
@@ -96,7 +101,7 @@
       margin-bottom: 30px;
       
       @media @mobile {
-      width: 60%;
+      width: 60%; // Widen text columns.
       }
   
       

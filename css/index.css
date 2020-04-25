@@ -216,6 +216,7 @@ img {
     display: flex;
     border: 1px solid blue;
     flex-direction: column;
+    justify-content: flex-start;
   }
 }
 .home .content-section .text-content {
@@ -224,8 +225,9 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
-    width: 100%;
+    width: 90%;
     padding: 0;
+    margin: 0 auto;
   }
 }
 .home .content-section .img-content {
@@ -235,6 +237,9 @@ img {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
   }
 }
 .home .content-section .img-content img {
