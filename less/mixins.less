@@ -1,1 +1,13 @@
 // Mixins in here
+.btn-class(@border-radius, @background-color) {
+    padding: 10px 40px;
+    border-radius: @border-radius; // 10px;
+    background-color:@background-color; // teal;
+    color: white;
+    cursor: pointer;
+  
+    &:hover {
+      // The compiled color returned is #006667 
+      background-color: darken(teal, 5%)
+    }
+  }

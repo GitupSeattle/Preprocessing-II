@@ -1,31 +1,68 @@
 .home {
 
+  .BusPicture {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
+        
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      display: flex;
+      // border: 1px solid blue;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+       
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+     
+      @media @mobile {
+        width: 100%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+      }
 
       img {
         border-radius: 10px;
       }
     }
-  }
+    
+      
+  } // close content-section
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      display: flex;
+      // border: 1px solid green;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -53,9 +90,29 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      align-items: center;
+      flex-direction: column;
+      // border: 1px solid orange;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media @mobile {
+      width: 60%; // Widen text columns.
+      }
+  
+      
     }
-  }
+    
+    .btn {
+      //Added button mixin
+     .btn-class(30px, @eastern-blue,);
+    
+
+    }// button
+
+  } // content pick
 }// home
