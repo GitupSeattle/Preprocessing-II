@@ -1,1 +1,28 @@
 // Navigation Styles here
+.navigation {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    // border: 1px solid red; help fix nav problems.
+    
+
+    
+    a {
+    text-decoration: none;
+    color: @shark;
+    font-size: 20px;
+    
+    }
+    @media @mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 1px solid red;
+    width:  100;
+    
+
+    
+    }
+}

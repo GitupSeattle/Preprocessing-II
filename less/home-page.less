@@ -1,5 +1,13 @@
 .home {
 
+  .BusPicture {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
+        
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -57,5 +65,10 @@
       width: 30%;
       margin-bottom: 30px;
     }
-  }
+    
+    .btn{
+      //Added button mixin
+     .btn-class(30px, @eastern-blue,);
+   }// button
+  } // content pick
 }// home
